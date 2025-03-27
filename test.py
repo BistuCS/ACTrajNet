@@ -58,7 +58,7 @@ def main():
     
     # Other parameters
     parser.add_argument('--delim', type=str, default=' ')
-    parser.add_argument('--model_dir', type=str, default="/saved_models/")
+    parser.add_argument('--model_dir', type=str, default="\\saved_models\\")
     
     args = parser.parse_args()
     
@@ -181,5 +181,5 @@ def test(model, loader_test, device):
 
 
 if __name__ == '__main__':
-    args = argparse.ArgumentParser().parse_args()
+    #args = argparse.ArgumentParser().parse_args()
     main()

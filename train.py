@@ -76,6 +76,7 @@ def train():
     
     ##Select device
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    print("device",device)
     
     ##Load test and train data
     datapath = os.getcwd() + args.dataset_folder + args.dataset_name + "/processed_data/"
